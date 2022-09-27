@@ -1,0 +1,29 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Dsp",
+    "name": "Dsp",
+    "password": "Dsp_421",
+    "gender": "Male",
+    "location": "Detroit"
+};
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Dsp",
+    "password": "Dsp_421"
+}
+###
+
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username": "Dsp",
+    "oldPassword": "Dsp_421",
+    "newPassword": "Dsp_124"
+}
